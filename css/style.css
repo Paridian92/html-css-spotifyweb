@@ -6,11 +6,19 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-main::after{
+.clearfix::after{
   content: '';
   display: table;
   clear: both;
 
+}
+
+ul{
+  list-style: none;
+}
+
+.hidden-item{
+  display: none;
 }
 
 .flex{
@@ -25,44 +33,77 @@ main::after{
 
 }
 
-#nav-bar{
-  position: fixed;
+.nav-sx{
   float: left;
   width: 230px;
+  height: 100%;
   background-color: black;
-  height: calc(100% - 90px) ;
   color: white;
-}
-
-
-#nav-bar .logo{
-  width: 100%;
-  max-width: 144px;
-  padding-top: 10px;
-}
-
-#nav-bar .logo-mobile{
-  display: none;
+  padding-left: 15px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .nav-top{
-  padding-left: 10px;
-  height:calc(100% - 90px)
+  width: 100%;
+  height: calc(100% - 80px);
 }
 
-#main-page{
+.logo{
+  width: 70%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.logo-mobile{
+
+  width: 85%;
+  padding-top: 15px;
+}
+
+.nav-top ul li img{
+  width: 35px;
+  height: 35px; 
+  padding-right: 10px; 
+}
+
+.nav-top ul li{
+  align-items: center;
+ 
+}
+
+
+
+.content{
   float: left;
-  margin-left: 191px;
-  width: calc(100% - 191px);
-  background:  #141922;
+  width: calc(100% - 230px);
   height: 100%;
+  background-color: #141922;
+  
+  
 }
 
-#main-page .upgrade-bar{
+.content .upgrade-bar{
   position: fixed;
   height: 90px;
   width: calc(100% - 230px);
   background-color: rgba(8, 11,18, 0.4);
+}
+
+.upgrade-bar button{
+  float: right;
+  padding: 15px 40px;
+  margin-right: 30px;
+  margin-top: 20px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.upgrade-bar button:hover{
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 footer{
@@ -90,7 +131,7 @@ footer img{
   width: 15%;
 }
 
-@media (max-width:600px){
+@media (max-width:600px) {
 
   .logo-mobile{
     display: block;
@@ -100,12 +141,13 @@ footer img{
     display: none;
   }
 
-  #nav-bar{
+  .nav-sx{
     width: 50px;
-    height: calc(100% - 90px);
+    
   }
 
-  #main-page{
-    width: 100%;
-  }
+  .nav-top ul li span{
+    display: none;
+  }  
+
 }
