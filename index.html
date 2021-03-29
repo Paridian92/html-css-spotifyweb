@@ -22,7 +22,7 @@
           <div class="logo"><img src="img/logo.svg" alt="logo"></div>
           <div class="logo-mobile hidden-item"><img src="img/logo-small.svg" alt=""></div>
           <ul>
-            <a href="#"><li class="flex text-white hover"><img src="img/home.svg" alt="logo"> <span>Home</span></li></a>
+            <a href="#"><li class="flex text-white hover home"><img src="img/home.svg" alt="logo"> <span>Home</span></li></a>
             <a href="#"><li  class="flex hover text-grey"><img src="img/search.svg" alt="logo"><span>Cerca</span></li></a>
             <a href="#"><li  class="flex hover text-grey"><img src="img/libreria.svg" alt="logo"> <span>La tua Libreria</span> </li></a>
             
@@ -55,7 +55,7 @@
         <div class="nav-bot">
           
           <div class="install">
-            <a class="text-grey" href="#"><i class="fas fa-arrow-circle-down"></i>
+            <a class="text-grey hover" href="#"><i class="fas fa-arrow-circle-down"></i>
             <span>Installa App</span></a>
           </div>
 
@@ -80,17 +80,52 @@
   
   <footer>
     <div id="foot-lft">
-      <img src="img/sinister.jpeg" alt="">
-      <h3>sinister</h3> 
-      <h3>brano nome</h3>
+
+      <img src="img/sinister.jpeg" alt="sinsiter">
+
+      <div>
+
+      <h3 class="text-white">Sinister</h3> 
+      <span class="text-grey">brano nome</span>
+  
+      </div>
+      <div class="flex">
+        <a href="#"><i class="far fa-heart"></i></a>
+        <a href="#"><i class="far fa-folder"></i></a>
+      </div>
+
     </div>
 
 
-    <div id="foot-cnt">center</div>
+    <div id="foot-cnt">
+
+      <div class="player-button flex">
+        
+          
+        <i class="fas fa-random"></i>
+        <i class="fas fa-step-backward"></i>
+        <i class="far fa-play-circle"></i>
+        <i class="fas fa-step-forward"></i>
+        <i class="fas fa-redo-alt"></i>
+        
+      </div>
+
+      <div class="player-bar flex">
+
+        <span>0.25</span>
+
+        <div class="music-bar"></div>
+
+        <span>4.35</span>
+
+      </div>
+
+    
+    </div>
 
 
 
-    <div id="foot-rgt">right</div>
+    <div id="foot-rgt"></div>
   </footer>
 </body>
 
