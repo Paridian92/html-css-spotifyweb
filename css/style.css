@@ -166,11 +166,6 @@ a{
 
 }
 
-#foot-rgt i{
-  font-size: 16px;
-  color: white;
-  margin: 0 5px;
-}
 
 
 /* main content */
@@ -180,8 +175,14 @@ a{
   width: calc(100% - 230px);
   height: 100%;
   background-color: #141922;
-
+  overflow-y: scroll;
 }
+
+.content h2{
+  padding-left: 15px;
+  margin-top: 60px;
+}
+
 
 .content .upgrade-bar{
   position: fixed;
@@ -209,6 +210,55 @@ a{
 
 }
 
+.browse-list{
+  padding-top: 90px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+
+  
+}
+
+.browse-list li{
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.song-box{
+  float: left;
+  width: 15%;
+  margin:0 0.75%;
+  min-width: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  padding-top:10px;
+  margin-bottom: 10px;
+
+}
+
+.song-box h5{
+  font-size: 11px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.song-box span{
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.song-box img{
+  width: 100%;
+}
+
+
+
 /* footer */
 
 footer{
@@ -227,6 +277,7 @@ footer{
 /* footer left */
 footer img{
   width: 15%;
+  min-width: 40px;
   margin-right: 10px;
 
 }
@@ -272,27 +323,42 @@ footer img{
 
 .music-bar{
   width: 100%;
-  min-width: 500px;
   height: 5px;
-  background-color: grey;
+  background-color:#5a5a5a;
   border-radius: 5px;
+  margin: 0 10px;
+}
+
+.upper-music-bar{
+  height: 50px;
+  width: 50px;
+  color: black;
+  
 }
  
 
 /* footer right */
 
+#foot-rgt i{
+  font-size: 16px;
+  color: white;
+  margin: 0 5px;
+}
+
 .volume-bar{
-  width: 200px;
+  width: 175px;
   height: 5px;
-  background-color: tomato;
+  background-color: grey;
+  border-radius: 5px;
   align-self: center;
+  margin-right: 15px;
 }
 
 
 
 /* MEDIA QUERIES */
 
-@media (max-width:600px) {
+@media (max-width:643px) {
 
   .logo-mobile{
     display: block;
@@ -330,11 +396,13 @@ footer img{
 
   #foot-lft .flex{
     flex-direction: column;
-
+  }
 }
 
-@media (max-height:580px){
+@media all and (max-height:580px) {
   .nav-bot{
     display: none;
+
   }
+
 }
