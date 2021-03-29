@@ -19,7 +19,7 @@
 
         <div class="nav-top">
 
-          <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+          <div class="logo hover"><img src="img/logo.svg" alt="logo"></div>
           <div class="logo-mobile hidden-item"><img src="img/logo-small.svg" alt=""></div>
           <ul>
             <a href="#"><li class="flex text-white hover home"><img src="img/home.svg" alt="logo"> <span>Home</span></li></a>
@@ -33,7 +33,7 @@
             <h3 class="text-white">PLAYLIST</h3>
 
             <a href="#"><div class="flex">
-              <i class="fas fa-plus"></i>
+              <i class="fas fa-plus "></i>
               <span class="text-grey hover">Crea Playlist</span>
             </div></a>
 
@@ -55,17 +55,22 @@
         <div class="nav-bot">
           
           <div class="install">
-            <a class="text-grey hover" href="#"><i class="fas fa-arrow-circle-down"></i>
-            <span>Installa App</span></a>
+            <a class="text-grey hover" href="#">
+              <i class="fas fa-arrow-circle-down"></i>
+              <span>Installa App</span></a>
           </div>
 
-          <div class="profile flex">
-            <a class="text-white" href="#"><img src="img/profile.svg" alt="profile">
-            <span>John Doe</span></a>
+          <div class="profile">
+            <a class="text-white flex" href="#">
+              <img src="img/profile.svg" alt="profile">
+              <span>John Doe</span>
+            </a>
           </div>
 
         </div>
       </div>
+
+
       <div class="content">
         
         <div class="upgrade-bar">
@@ -85,8 +90,8 @@
 
       <div>
 
-      <h3 class="text-white">Sinister</h3> 
-      <span class="text-grey">brano nome</span>
+      <h3 class="text-white hover">Sinister</h3> 
+      <span class="text-grey hover">brano nome</span>
   
       </div>
       <div class="flex">
@@ -97,7 +102,7 @@
     </div>
 
 
-    <div id="foot-cnt">
+    <div id="foot-cnt flex">
 
       <div class="player-button flex">
         
@@ -112,11 +117,14 @@
 
       <div class="player-bar flex">
 
-        <span>0.25</span>
+        <span class="text-white">0.25</span>
 
-        <div class="music-bar"></div>
+        <div class="music-bar">
+          
 
-        <span>4.35</span>
+        </div>
+
+        <span class="text-white">4.35</span>
 
       </div>
 
@@ -125,7 +133,16 @@
 
 
 
-    <div id="foot-rgt"></div>
+    <div class="flex" id="foot-rgt">
+
+      <i class="fas fa-list hover"></i>
+      <i class="fas fa-desktop hover"></i>
+      <i class="fas fa-volume-up hover"></i>
+      <div class="volume-bar">
+
+      </div>
+
+    </div>
   </footer>
 </body>
 

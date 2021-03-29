@@ -32,6 +32,7 @@ a{
 .hover:hover{
   color: white;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .hidden-item{
@@ -110,7 +111,7 @@ a{
 
 .playlist-menu .fa-plus{
   font-size: 20px;
-  background-color:#a3a3a3 ;
+  background-color:grey ;
   padding: 10px;
   color: black;
   margin-right: 10px;
@@ -143,6 +144,10 @@ a{
 
 .profile{
   margin-top: 10px;
+ 
+}
+
+.profile a{
   align-items: center;
 }
 
@@ -159,6 +164,12 @@ a{
   background-color: grey;
   margin-right: 10px;
 
+}
+
+#foot-rgt i{
+  font-size: 16px;
+  color: white;
+  margin: 0 5px;
 }
 
 
@@ -213,6 +224,13 @@ footer{
 
 }
 
+/* footer left */
+footer img{
+  width: 15%;
+  margin-right: 10px;
+
+}
+
 #foot-lft{
   display: flex;
   align-items: center; 
@@ -225,9 +243,12 @@ footer{
   margin: 0 15px;
 }
 
+/* footer center */
+
 .player-button{
   align-items: center;
   justify-content: space-evenly;
+  max-width: 300px;
 }
 
 .player-button i:nth-child(3){
@@ -237,14 +258,34 @@ footer{
 .player-button i{
   font-size: 22px;
   color: white;
+  margin: 0 15px;
  
 }
 
+.player-bar{
+  align-items:center;
+  justify-content: center;
+  
+}
 
-footer img{
-  width: 15%;
-  margin-right: 10px;
 
+
+.music-bar{
+  width: 100%;
+  min-width: 500px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 5px;
+}
+ 
+
+/* footer right */
+
+.volume-bar{
+  width: 200px;
+  height: 5px;
+  background-color: tomato;
+  align-self: center;
 }
 
 
